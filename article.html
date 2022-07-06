@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<title>Mangalam | Blogs | Chaos Theory</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="tablogo.png">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.transition
+{
+  transition-duration: 0.4s;
+}
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("forest on head.jpg");
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("daniele-levis-pelusi-x62E-vHwsMA-unsplash.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("emrah-kara-l56FNAe3jUo-unsplash.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="Blog.html" class="w3-bar-item w3-button transition">HOME</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="Blog.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home" alt="Semi Reality Composite Image mad on Photoshop, Lightroom out of the copyright free images from Unsplash.com">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">A Sound of Thunder:</span>The Science of Chaos</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">A sound of Thunder</h3>
+  <p class="w3-center"><em>The Science of Chaos</em></p>
+  <p>Chaos theory says within the apparent randomness of chaotic complex systems, there are underlying patterns, interconnectedness, constant feedback loops, repetition, self-similarity, fractals, and self-organization.
+     The butterfly effect, an underlying principle of chaos, describes how a small change in one state of a deterministic nonlinear system can result in large differences in a later state (there is sensitive dependence on initial conditions)
+</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p></p>
+      <img src="nathan-dumlao-pyNaDWUFN9A-unsplash.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off transition" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-padding-large">
+      <br>
+      <p>
+         “A Sound of Thunder" is a science fiction short story by American writer Ray Bradbury, first published in Collier's magazine in the June 28, 1952. This story is often credited with the origin of the term Butterfly Effect. The plot of the story goes as in the year 2055, time travel has become a practical reality, and the company Time Safari Inc. offers wealthy adventurers the chance to travel back in time to hunt extinct species such as dinosaurs. A hunter named Eckels pays $10,000 to join a hunting party that will travel back 66 million years to a guided safari to kill a Tyrannosaurus rex.When the party arrives in the past, Travis (the hunting guide) and Lesperance (Travis's assistant) warn Eckels and the two other hunters, Billings and Kramer, about the necessity of minimizing the events they change before they go back, since even the smallest alterations to the distant past could snowball into catastrophic changes in history. Travis explains that the hunters are obliged to stay on a levitating path to avoid disrupting the environment, that any deviation will be punished with hefty fines, and that prior to the hunt, Time Safari scouts had been sent back to select and tag their prey, which would have died within minutes anyway, and whose death has been calculated to have minimal effect on the future.
+       </p>
+    </div>
+  </div>
+
+
+</div>
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">C H A O S</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center"></h3>
+  <p class="w3-center"><em><br></em></p><br>
+  <p>
+    Although Eckels is initially excited about the hunt, when the monstrous beast approaches, he loses his nerve. He panics and runs back to the time machine through the forest. The hunting party then kills the T-Rex and returns to the future. Travis asks the people at the company if everything was ok and they nod in affirmation, but things don’t feel the same to anyone, the words of English were spelled differently, the president was someone else. Eckels panics and searches himself for all the things he could have disturbed in the past, that’s when he finds in his mud laden boots a butterfly, beautiful and crushed, but dead. Somehow, the death of this little butterfly has resulted into catastrophic changes in future. Eckels begs Travis to take him back to the past so he could fix things he ruined, but Travis objects saying it could only result in further more paradoxes. On hearing this Eckels sits down and starts to cry, eyes closed, when he hears Travis taking the safety off from his rifle & when he opens his eyes, all he could hear was “a sound of thunder”.
+  </p>
+  <p>
+The phrase ‘A butterfly flaps its wings in Tokyo and a Tornado occurs in Texas’ is a common phrase that shows how this theory has fascinated people for generations.
+  </p>
+  <p><h4>P S Laplace quoted about predictability:</h4></p>
+  <p><h2>‘If this intellect were vast enough to submit the data to analysis
+Then the future, just like the past would be present before its eyes’
+</h2></p>
+<br>
+<p>
+  The butterfly effect showed that the predictability of any chaotic systems can only be accurate if the number of variables at play will be very less and the initial condition for each variable is accurate to every single decimal place, and this means accuracy till infiniteth decimal places,
+  which is practically impossible. This is the reason why it is easier to predict the motion of celestial bodies than it is to predict the weather on the planet for 1 week, there are just too many variables at play, say pressure, moisture, wind speed, particulate presence etc.
+Chaos Theory, however, tells us that if chaotic systems are left to repeat themselves over time, we would notice the underlying patterns, fractals, deterministic properties, which can be predicted by taking the correct initial conditions over the right time scale.
+The butterfly effect and chaos theory together somewhat makes the possibility of Time Travel to be possible in future just a fantasy. But still humans are a very young species, may in the future acquire the skills for producing all the variables with perfect accuracies and found a way to break the 2nd Law of Thermodynamics, to make the time travel possible.
+Until then, humans must find a way to keep their civilization going and the chaos theory will keep serving us in the same way it is now, in cryptography algorithms, biological sciences and so on.
+</p>
+<div class="w3-right">
+  <h3> - K. Mangalam</h3>
+</div>
+</div>
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">U N P R E D I C T A B I L I T Y</span>
+  </div>
+</div>
+<p>
+  -References
+</p>
+<p><a title="References" target="_blank" class="w3-hover-text-green">-	 "The Ray Bradbury Theater — Season 4, Episode 6: A Sound of Thunder". TV.com</a></p>
+<p><a href="https://www.comics.org/issue/52596/" title="References" target="_blank" class="w3-hover-text-green">-  "Ray Bradbury Comics #1". TV.com</a></p>
+<p><a href="https://books.google.co.in/books?id=R7V2DwAAQBAJ&redir_esc=y" title="References" target="_blank" class="w3-hover-text-green">-  Weinberger, David (2019). Everyday Chaos - Technology, Complexity, and How We're Thriving in a New World of Possibility. Harvard Business Review Press. ISBN 9781633693968.</a></p>
+<p><a href="https://fractalfoundation.org/resources/what-is-chaos-theory/" title="References" target="_blank" class="w3-hover-text-green">-	 "What is Chaos Theory? – Fractal Foundation"</a></p>
+<p><a href="https://courses.seas.harvard.edu/climate/eli/Courses/EPS281r/Sources/Chaos-and-weather-prediction/1-Chaos-Theory-A-Brief-Introduction-IMHO.pdf" title="References" target="_blank" class="w3-hover-text-green">-   courses.seas.harvard.edu/climate/eli/Courses/EPS281r/Sources/Chaos-and-weather-prediction/1-Chaos-Theory-A-Brief-Introduction-IMHO.pdf</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Lorenz_system" title="References" target="_blank" class="w3-hover-text-green">-	 en.wikipedia.org/wiki/Lorenz_system</a></p>
+</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off transition">
+  <a href="#home" class="w3-button w3-light-grey transition"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href = "https://github.com/ImMortaL0P"><i class="fa fa-github w3-hover-opacity transition"></i>
+    <a href = "https://www.instagram.com/lost.storiess/"><i class="fa fa-instagram w3-hover-opacity transition"></i></a>
+    <a href = "https://www.codechef.com/users/not_immortal"><i class="fa fa-code w3-hover-opacity transition"></i>
+    <a href = "https://twitter.com/lost_storiess"><i class="fa fa-twitter w3-hover-opacity transition"></i>
+    <a href="https://www.linkedin.com/in/kumar-mangalam-362a77176/"<i class="fa fa-linkedin w3-hover-opacity transition"></i></a>
+  </div>
+  <p>Made with 🖤 <a href="https://www.linkedin.com/in/kumar-mangalam-362a77176/" title="" target="_blank" class="w3-hover-text-green">K.Mangalam</a></p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

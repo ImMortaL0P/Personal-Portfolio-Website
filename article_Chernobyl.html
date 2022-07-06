@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<title>Mangalam | Blogs | Chernobyl</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="tablogo.png">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.transition
+{
+  transition-duration: 0.4s;
+}
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("newspaperChernobly.jpg");
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("deadcatChernobly.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("towerChernobly.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("reactorChernobly.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="Blog.html" class="w3-bar-item w3-button transition">HOME</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="Blog.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home" alt="Semi Reality Composite Image mad on Photoshop, Lightroom out of the copyright free images from Unsplash.com">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small"></span>“So tell me, how does a RBMK reactor core explode?”</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Chernobyl Disaster</h3>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p></p>
+      <img src="maskChernobly.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off transition" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-padding-large">
+      <p><em>Chernobyl disaster is till date the most severe nuclear disaster ever happened in the recorded history of mankind. Many people still believe the nuclear reactor number 4 in the Vladimir I Lenin Nuclear power station exploded because the reactor became a nuke and a nuclear explosion took place. This is not exactly true, though the nuclear reaction spiraled out of control, it did not cause the explosion or the catastrophe. This is the science behind the Chernobyl Disaster.
+      </em></p>
+      <br>
+      <p>
+         The central component which can be rightfully credited as the main culprit in the disaster is Graphite. The reactor type used in Chernobyl was RBMK-1000 (Reaktor Bolshoy Moshchnosti Kanalniy). The designers of the RBMK claimed it to be the “safest” as it cannot cause any explosion. Although, on later research it was revealed that it had some key flaws which can pileup to become catastrophic like the active removal of decay heat, the graphite displacer ends of control rods, positive void coefficient and the fact that this reactor type was very unstable at lower power levels.
+       </p>
+    </div>
+  </div>
+
+
+</div>
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">R A D I A T I O N</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="para1">
+  <h3 class="w3-center"></h3>
+  <!-- <p class="w3-center"><em><br></em></p><br> -->
+  <p>
+    RBMK is a generation-II graphite-moderated light water cooled reactor. Now the question is what is a moderator in nuclear reactor. When an atom splits, it releases neutrons at near the speed of light. At this speed it becomes highly unlikely that the neutrons will strike the next atom. Thus a neutron flux moderator (the name moderator because it moderates the neutron speed) is introduced in the reaction (in our case graphite), the neutrons slow down as they bounce around inside the moderator until they travel slowly enough to split more atoms. Each Graphite block has a hole down the center which contains the pipes for the fuel channels and control rods. Water (the coolant) flows inside these channels at very high pressure. Now, what are control rods? In simple terms, they are the on off switch and a way to set and control the power level of a reactor. The control rods are made of very strong neutron poisons (materials which are strong neutron absorbers) like Cadmium, Hafnium, Indium or in our case, Boron. If all the rods are inside the core, they’ll kill the nuclear chain reaction and if 80% of them are withdrawn, the reactor runs at full speed for which it was designed. When the control rods are withdrawn they leave an empty space in the channels, the lower end of the controls, made of Graphite, were made to fill this void (graphite is an efficient steam displacer and also increases reactivity since it’s also a neutron flux moderator).  Ideally this part should be made out of Boron, but the Graphite made the reactor cheaper and control rods twice efficient. Due to this design flaw, the control rods caused momentary power surge precisely when the control rods were meant to kill the reaction. To make matters worse, the graphite tips were not made long enough to reach the base of the reactor, and hence some void was still left in the base when they were inserted. These all were not very critical if the reactor was functioning normally, but then the safety test came in the picture which made it all go down in catastrophe.The safety test was to simulate a blackout condition in which the pumps pumping fresh coolant water in the reactor would die, and till the backup generators came up online it would be too late. So to see if it is possible to use the energy from the dying turbine of the reactor to keep the pumps online till the backup generators came back online. For this the reactor had to be kept in low power mode (700MJ instead of ideal 3200MJ) to simulate a blackout condition.
+  </p>
+</div>
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">R O E N T E G N</span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64" id="para2">
+  <P>
+     One more factor came into play because of instability of RBMK at low power levels, Xenon, Xenon is a very strong neutron poison and at full power reactor burns this Xenon away. The test was postponed on the day it was meant to take place and this caused severe xenon poisoning in the core, which went beyond recovery, the only solution left to raise the power from this situation, safely, was to shut down the reactor and re-start it after 24Hrs, a basic reactor rule, to never start a reactor which has been poisoned. But the staffs decided to proceed with the test. To bring the power up to desired test levels, the controllers decided to pull out all control rods from the reactor, but the poisoning was so strong that the best they could do was 500MJ, still they proceeded with the test. The pumps were shut down to proceed with the test, now the reactivity of the reactor was unchecked with fresh coolant, no control rods, hence the reactivity instantly swung back to highly reactive side and power began to rise. There was something in the RBMK reactors called the positive void coefficient, which basically means that with more steam, the reactivity increases. Now whatever amount of coolant was left in the reactor channels instantly evaporated, the xenon burned away and the reactivity began to spiral out of control. The operators on seeing this panicked and pressed the AZ-5 button, the kill switch of the reactor, but as soon as the control rods began to insert back, their graphite tips touched the fuel channels, and the reactivity spiked, evaporating all the then remaining liquid in the hydraulic channels of the control rods fixing them in the same position, endlessly increasing the reactivity. Within minutes the reactivity evaporated every last drop of water in the reactor, increasing the pressure so much, that it blew the reactor lid off, exposing the fissioning core to oxygen, and hence, the explosion.
+  </P>
+  <P>
+    Who is to be blamed for this? Operators? Definitely. Design Engineers? For sure. Government for the cover up? Yes! But at the end, the fact that an RBMK core can’t explode by its own, unless its pushed to the edge, was true, even though the Chernobyl explosion was due to gases and water vapor, and not nuclear. There were so many lies involved, that Professor Valery Legasov (scientist in the Central Committee of the Soviet Union to handle the crisis) in his voice notes, before committing suicide, said –
+  </P>
+  <br>
+  <h4><b>“When the truth offends, we lie and lie, until we can no longer remember it is even there. But it is still there. Every lie we tell incurs a debt to the truth. Sooner or later, that debt is paid. I ask now, what is the cost of Lies?”</b></h4>
+  <br>
+  <h5>So now you know, how does a RBMK reactor core explodes.</h5>
+  <br>
+  <div class="w3-right">
+    <h3> - K. Mangalam</h3>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">G R A P H I T E</span>
+  </div>
+</div>
+<p>
+  -References
+</p>
+<p><a href="https://www.world-nuclear.org/information-library/nuclear-fuel-cycle/nuclear-power-reactors/appendices/rbmk-reactors.aspx" title="References" target="_blank" class="w3-hover-text-green">-  World Nuclear.org/RBMK</a></p>
+<p><a href="https://en.wikipedia.org/wiki/RBMK" title="References" target="_blank" class="w3-hover-text-green">-  wikipedia/RBMK</a></p>
+<p><a href="https://world-nuclear.org/information-library/country-profiles/countries-o-s/russia-nuclear-fuel-cycle.aspx" title="References" target="_blank" class="w3-hover-text-green">-	 "Russia's Nuclear Fuel Cycle – Russian Nuclear Fuel Cycle – World Nuclear Association". world-nuclear.org</a></p>
+<p><a href="" title="References" target="_blank" class="w3-hover-text-green">-   History of Rosatom" ('История атомной энергетики Советского Союза и России. Вып. 3. История РБМК. Под ред. Сидоренко В. А. — М.: ИздАТ, 2003..</a></p>
+</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off transition">
+    <a href="#home" class="w3-button w3-light-grey transition"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href = "https://github.com/ImMortaL0P"><i class="fa fa-github w3-hover-opacity transition"></i>
+      <a href = "https://www.instagram.com/lost.storiess/"><i class="fa fa-instagram w3-hover-opacity transition"></i></a>
+      <a href = "https://www.codechef.com/users/not_immortal"><i class="fa fa-code w3-hover-opacity transition"></i>
+      <a href = "https://twitter.com/lost_storiess"><i class="fa fa-twitter w3-hover-opacity transition"></i>
+      <a href="https://www.linkedin.com/in/kumar-mangalam-362a77176/"<i class="fa fa-linkedin w3-hover-opacity transition"></i></a>
+  </div>
+  <p>Made with 🖤 <a href="https://www.linkedin.com/in/kumar-mangalam-362a77176/" title="W3.CSS" target="_blank" class="w3-hover-text-green">K.Mangalam</a></p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
